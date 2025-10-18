@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - MUST Mountain Run</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #00bcd4;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Contact Section */
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      text-align: center;
+      color: #00bcd4;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-card {
+      background: #f0f0f0;
+      border-radius: 10px;
+      width: 280px;
+      padding: 1rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .info-card h3 {
+      color: #00796b;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card p {
+      font-size: 1rem;
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #00796b;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    form button {
+      display: block;
+      width: 100%;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #0097a7;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .info-card {
+        width: 90%;
+      }
+
+      form button {
+        font-size: 0.95rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Contact MUST Mountain Run</h1>
+    <p>We’d love to hear from you — reach out for questions, registration, or support!</p>
+  </header>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <p>Whether you're an athlete, sponsor, or volunteer, we’re here to assist.  
+       You can contact us through the following channels or send a direct message below.</p>
+
+    <div class="contact-info">
+      <div class="info-card">
+        <h3>📍 Location</h3>
+        <p>Meru University of Science and Technology<br>Meru, Kenya</p>
+      </div>
+
+      <div class="info-card">
+        <h3>📞 Phone</h3>
+        <p>+254 798 766 357</p>
+        <p>+254 712 345 678</p>
+      </div>
+
+      <div class="info-card">
+        <h3>📧 Email</h3>
+        <p>brian@gmail.com</p>
+        <p>info@mustmountainrun.ac.ke</p>
+      </div>
+    </div>
+
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">your email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MUST Mountain Run | Designed by Brian | Contact: brian@gmail.com</p>
+  </footer>
+
+</body>
+</html>
+

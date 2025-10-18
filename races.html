@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUST Mountain Run — Race Types</title>
+
+  <style>
+    /* ===== BASIC PAGE STYLE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f0f8f7;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2e8b57, #00bcd4);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* ===== RACE TYPES SECTION ===== */
+    .races {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 3rem 1rem;
+    }
+
+    .race-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 300px;
+      padding: 2rem 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .race-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Color bar on top */
+    .race-card.beginner {
+      border-top: 6px solid #4caf50;
+    }
+    .race-card.intermediate {
+      border-top: 6px solid #ff9800;
+    }
+    .race-card.advanced {
+      border-top: 6px solid #f44336;
+    }
+
+    .race-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .race-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .race-card button {
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .race-card button:hover {
+      background-color: #008c9e;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .races {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MUST Mountain Run — Race Types</h1>
+    <p>Choose your challenge and be part of the adventure!</p>
+  </header>
+
+  <section class="races">
+    <div class="race-card beginner">
+      <h3>5KM Fun Run</h3>
+      <p>Perfect for beginners, families, and those looking for a light and scenic experience.</p>
+      <button>Join 5KM Run</button>
+    </div>
+
+    <div class="race-card intermediate">
+      <h3>10KM Challenge</h3>
+      <p>Test your stamina and speed across moderate mountain terrain with stunning views.</p>
+      <button>Join 10KM Run</button>
+    </div>
+
+    <div class="race-card advanced">
+      <h3>21KM Half Marathon</h3>
+      <p>The ultimate endurance test — conquer steep climbs and rugged trails for glory!</p>
+      <button>Join 21KM Run</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MUST University — Mountain Run Event</p>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+
+</body>
+</html>
+
