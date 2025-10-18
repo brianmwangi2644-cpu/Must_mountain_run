@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MUST Mountain Run 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: aqua;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1,
+    header p {
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: left;
+    }
+
+    .navbar li {
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 50vh;
+      background: url("images/z.jpg") no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Call to Action Button */
+    .cta-button {
+      background-color: rgb(102, 81, 219);
+      cursor: pointer;
+      border: none;
+      padding: 0.4rem 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 6px;
+      transition: 0.3s ease;
+      margin: 0 auto;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: rgb(2, 158, 255);
+      text-decoration: underline;
+    }
+
+    /* Features Section (Slider) */
+    .features {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      background: #fff;
+      padding: 2rem 0;
+    }
+
+    .slider {
+      display: flex;
+      width: 200%; /* because content is duplicated */
+      animation: slideLoop 10s linear infinite;
+    }
+
+    @keyframes slideLoop {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .feature-card {
+      background: #f4f4f4;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(34, 77, 32, 0.5);
+      padding: 1.5rem;
+      width: 280px;
+      text-align: center;
+      margin: 0 1rem;
+      max-height: 400px;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-card h2 {
+      color: lightgreen;
+      margin-top: 0;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 0.5rem 0.5rem;
+      margin-top: 1rem;
+    }
+
+    footer a {
+      color: #4caf50;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 700px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      .feature-card {
+        width: 80%;
+      }
+
+      .cta-button {
+        margin: 1rem auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to MUST Mountain Run</h1>
+    <p>Discover the beauty, peace, and adventure of nature</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register now.html">Register</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="contact us.html">Contact</a></li>
+      <li><a href="events.html">Schedule</a></li>
+      <li><a href="races.html">Races</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Enjoy the Spirit of Nature</h1>
+    <p>Escape the city and immerse yourself in lush greenery, fresh air, and the soothing sounds of nature.  
+       MUST Mountain Run offers hiking trails, wildlife spotting, picnic spots, muscle building, and unforgettable memories.
+    </p>
+    <button class="cta-button">Join us</button>
+  </section>
+
+  <section class="features">
+    <div class="slider">
+      <div class="feature-card">
+        <h2>Awards</h2>
+        <img src="images/a.jpg" alt="Awards">
+      </div>
+      <div class="feature-card">
+        <h2>Run competition</h2>
+        <img src="images/n.jpg" alt="Run competition">
+      </div>
+      <div class="feature-card">
+        <h2>Men behind the program</h2>
+        <img src="images/bm.png" alt="Men behind the program">
+      </div>
+      <div class="feature-card">
+        <h2>Forest Nature</h2>
+        <img src="images/b.jpg" alt="Forest Nature">
+      </div>
+
+      <!-- Duplicate for continuous loop -->
+      <div class="feature-card">
+        <h2>Awards</h2>
+        <img src="images/a.jpg" alt="Awards">
+      </div>
+      <div class="feature-card">
+        <h2>Run competition</h2>
+        <img src="images/n.jpg" alt="Run competition">
+      </div>
+      <div class="feature-card">
+        <h2>Men behind the program</h2>
+        <img src="images/bm.png" alt="Men behind the program">
+      </div>
+      <div class="feature-card">
+        <h2>Forest Nature</h2>
+        <img src="images/b.jpg" alt="Forest Nature">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Welcome to MUST Mountain Run</h3>
+    <p>Adventure awaits. Let's explore the world!</p>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Events</a> |
+    <a href="#">Contact</a>
+    <p>Follow us on:
+      <a href="#">Facebook</a>,
+      <a href="#">Twitter</a>,
+      <a href="#">Instagram</a>
+    </p>
+    <p>Contact us: 0798766357</p>
+    <p>Email: brian@gmail.com</p>
+    <p>Designed by Brian</p>
+    <p>Terms of Service | Privacy Policy</p>
+    <p>Subscribe to our newsletter for updates and offers.</p>
+    &copy; 2025 MUST Mountain Run. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

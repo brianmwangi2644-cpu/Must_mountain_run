@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Must Forest - Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(to bottom, #e6ffe6, #b3ffb3);
+            color: #234d20;
+        }
+        header {
+            background: #234d20;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .hero {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            background: #4caf50;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #388e3c;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(34,77,32,0.1);
+            padding: 1.5rem;
+            max-width: 300px;
+            text-align: center;
+        }
+        .feature h2 {
+            margin-top: 0;
+            color: #388e3c;
+        }
+        .mountain-run {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(34,77,32,0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: center;
+        }
+        .mountain-run img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        footer {
+            background: #234d20;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .mountain-run {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Must Forest</h1>
+        <p>Discover the beauty, peace, and adventure of nature</p>
+    </header>
+    <section class="hero">
+        <h1>Experience the Magic of Must Forest</h1>
+        <p>
+            Escape the city and immerse yourself in lush greenery, fresh air, and the soothing sounds of nature.
+            Must Forest offers hiking trails, wildlife watching, picnic spots, mountain runs, and unforgettable memories.
+        </p>
+        <button class="cta-button">Plan Your Visit</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h2>Scenic Trails</h2>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Forest Trail">
+            <p>Explore miles of well-marked hiking paths through ancient trees and vibrant flora.</p>
+        </div>
+        <div class="feature">
+            <h2>Wildlife</h2>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Wildlife">
+            <p>Spot deer, birds, and other forest creatures in their natural habitat.</p>
+        </div>
+        <div class="feature">
+            <h2>Family Friendly</h2>
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80" alt="Family Picnic">
+            <p>Enjoy safe picnic areas, guided tours, and activities for all ages.</p>
+        </div>
+    </section>
+    <section class="mountain-run">
+        <h2>Mountain Run Adventure</h2>
+        <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80" alt="Mountain Run">
+        <p>
+            Challenge yourself with our annual Mountain Run! Race through breathtaking forest trails, climb scenic hills, and enjoy panoramic views from the summit.
+            Whether you're a seasoned runner or a beginner, the Must Forest Mountain Run is an event for everyone. Join us for fun, fitness, and the thrill of nature!
+        </p>
+        <button class="cta-button">Register for Mountain Run</button>
+    </section>
+    <footer>
+        &copy; 2025 Must Forest. All rights reserved.
+    </footer>
+</body>
+</html>
